@@ -21,7 +21,7 @@ jobs:
       run: ./run all --tags latest --image_name ${{ secrets.DOCKERHUB_REPO }}
     
     - name: Upload artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: brighton_simple
         path: results/latest/brighton_simple
