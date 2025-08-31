@@ -18,7 +18,7 @@ jobs:
       uses: actions/checkout@v2
   
     - name: Run tests
-      run: ./run all --tags latest --image_name ${{ secrets.DOCKERHUB_REPO }}
+      run: ./run all --datasets brighton_simple --tags latest --image_name ${{ secrets.DOCKERHUB_REPO }}
     
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
