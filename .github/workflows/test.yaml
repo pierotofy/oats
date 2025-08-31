@@ -1,4 +1,4 @@
-name: Publish Docker
+name: Test ODM
 
 on:
   push:
@@ -17,11 +17,11 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
   
-  - name: Run tests
-    run: ./run all --tags latest --image_name ${{ secrets.DOCKERHUB_REPO }}
-  
-  - name: Upload artifacts
-    uses: actions/upload-artifact@v3
-    with:
-      name: brighton_simple
-      path: results/latest/brighton_simple
+    - name: Run tests
+      run: ./run all --tags latest --image_name ${{ secrets.DOCKERHUB_REPO }}
+    
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: brighton_simple
+        path: results/latest/brighton_simple
