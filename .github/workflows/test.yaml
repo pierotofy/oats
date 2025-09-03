@@ -33,8 +33,6 @@ jobs:
           results/latest/brighton_simple/test_default_with_dsm_and_dtm/odm_orthophoto/
           results/latest/brighton_simple/test_default_with_dsm_and_dtm/odm_dem/
           results/latest/brighton_simple/test_default_with_dsm_and_dtm/odm_texturing/
-          
-          
-
+          results/latest/brighton_simple/test_default_with_dsm_and_dtm/log.json
 
       
